@@ -1,0 +1,28 @@
+{
+  "Customers": [
+    {
+      "id": "1",
+      "CustomerCode": "1001",
+      "CustomerName": "Ashish",
+      "CustomerAmount": "100.23"
+    },
+    {
+      "id": "e7fd",
+      "CustomerCode": "3333",
+      "CustomerName": "errrr",
+      "CustomerAmount": 0
+    },
+    {
+      "id": "a97a",
+      "CustomerCode": "7778",
+      "CustomerName": "rrrr",
+      "CustomerAmount": 0
+    },
+    {
+      "id": "5d8a",
+      "CustomerCode": "3334",
+      "CustomerName": "rrrr",
+      "CustomerAmount": 0
+    }
+  ]
+}
