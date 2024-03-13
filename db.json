@@ -23,6 +23,74 @@
       "CustomerCode": "3334",
       "CustomerName": "rrrr",
       "CustomerAmount": 0
+    },
+    {
+      "id": "a889",
+      "CustomerCode": "4444",
+      "CustomerName": "ffff",
+      "CustomerAmount": 0
+    },
+    {
+      "id": "9d70",
+      "CustomerCode": "6666",
+      "CustomerName": "ffff",
+      "CustomerAmount": 0
+    },
+    {
+      "id": "ad87",
+      "CustomerCode": "7777",
+      "CustomerName": "ffff",
+      "CustomerAmount": 0
+    },
+    {
+      "id": "4e7d",
+      "CustomerCode": "4545",
+      "CustomerName": "gggg",
+      "CustomerAmount": 0
+    },
+    {
+      "id": "df65",
+      "CustomerCode": "5666",
+      "CustomerName": "cvvvv",
+      "CustomerAmount": 0
+    }
+  ],
+  "Suppliers": [
+    {
+      "id": "1",
+      "SupplierCode": "11",
+      "SupplierName": "Supp1",
+      "SupplierAmount": "100.23"
+    },
+    {
+      "id": "2",
+      "SupplierCode": "22",
+      "SupplierName": "Supp2",
+      "SupplierAmount": "200.23"
+    },
+    {
+      "id": "b69c",
+      "SupplierCode": "4444",
+      "SupplierName": "ffff",
+      "SupplierAmount": 0
+    },
+    {
+      "id": "6c08",
+      "SupplierCode": "3333",
+      "SupplierName": "fffff",
+      "SupplierAmount": 0
+    },
+    {
+      "id": "22a8",
+      "SupplierCode": "7777",
+      "SupplierName": "ffff",
+      "SupplierAmount": 0
+    },
+    {
+      "id": "d377",
+      "SupplierCode": "7777",
+      "SupplierName": "gggg",
+      "SupplierAmount": 0
     }
   ]
 }

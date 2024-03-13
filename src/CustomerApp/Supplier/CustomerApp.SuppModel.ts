@@ -6,19 +6,19 @@ import {NgForm,
 // Create :- We create the validation object model
 // Connect :- We connect the validation to the UI
 // Check :- IsValid , IsDirty
-export class Customer{
+export class Supplier{
     SupplierCode:string = "";
     SupplierName:string = "";
     SupplierAddress:string = "";
     SupplierAmount:number = 0;
-    formCustomerGroup!: FormGroup; // Create object of FormGroup
+    formSupplierGroup!: FormGroup; // Create object of FormGroup
     constructor(){
         
         var _builder = new FormBuilder();
-        this.formCustomerGroup = _builder.group({}); // Use the builder to create 
+        this.formSupplierGroup = _builder.group({}); // Use the builder to create 
         // control --> validation
         // 1 control --> 1 validation
-        this.formCustomerGroup.
+        this.formSupplierGroup.
         addControl("SupplierNameControl",
                     new FormControl('',Validators.required)
         );
@@ -28,7 +28,7 @@ export class Customer{
        validationcollection.push(Validators.required);
        validationcollection.push(Validators.pattern("^[0-9]{4,4}$"))
 
-       this.formCustomerGroup.
+       this.formSupplierGroup.
        addControl("SupplierCodeControl",
                    new FormControl('',Validators.compose(validationcollection))
        );

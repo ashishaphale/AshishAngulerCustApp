@@ -29,5 +29,13 @@ export class GridComponent{
      SelectGrid(_selected:any){
          this.eventemitter.emit(_selected);
      }
+     accountLink() {
+        if ( this.constructor.name === 'Customer') {
+            return ['/Customer/Add'];
+          } else if ( this.constructor.name === 'Supplier') {
+            return ['/Supplier/Add'];
+          }
+          return "#";
+     }
      
 }

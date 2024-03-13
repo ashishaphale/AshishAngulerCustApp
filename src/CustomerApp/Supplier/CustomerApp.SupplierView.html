@@ -1,1 +1,26 @@
 Welcome to supplier page
+
+<form [formGroup]="SupplierModel.formSupplierGroup">
+    Supplier Code :<input formControlName="SupplierCodeControl" 
+    [(ngModel)]="SupplierModel.SupplierCode" 
+      type=text/><br>
+    Supplier Name :<input formControlName="SupplierNameControl"
+    [(ngModel)]="SupplierModel.SupplierName"
+    type=text/><br>
+    Supplier Amount :<input [(ngModel)]="SupplierModel.SupplierAmount"
+    [ngModelOptions]="{standalone: true}"
+    type=text/><br>
+    <input [disabled]="!(SupplierModel.formSupplierGroup.valid)" (click)="Add()"  type=button value="Add"/>
+    <input [disabled]="Disable" type="button" value="send to server" (click)="PosttoServer()"/>
+    </form>
+    <div *ngIf="SupplierModel.formSupplierGroup.dirty" 
+          [hidden]="!(hasError('pattern','SupplierCodeControl'))" style="background-color:red;">Supplier code format is not proper</div><br>
+    <div *ngIf="SupplierModel.formSupplierGroup.dirty" 
+    [hidden]="!(hasError('required','SupplierCodeControl'))" style="background-color:red;">Supplier code is required</div><br>
+    <div *ngIf="SupplierModel.formSupplierGroup.dirty"
+    [hidden]="!(hasError('required','SupplierNameControl'))" style="background-color:red;">Supplier name is required</div><br>
+    
+    <grid-ui [grid-columns]="[{'colName':'SupplierCode'},{'colName':'SupplierName'},{'colName':'SupplierAmount'}]" 
+    [grid-data]="SupplierModels"
+    (grid-selected)="SelectSupplier($event)">
+    </grid-ui>

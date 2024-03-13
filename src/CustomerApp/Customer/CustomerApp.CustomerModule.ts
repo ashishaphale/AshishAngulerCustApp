@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 import {FormsModule,ReactiveFormsModule} from "@angular/forms"
 import {RouterModule} from "@angular/router"
 import { CustomerComponent } from './CustomerApp.CustomerComponent';
-import {GridComponent} from "../Utility/CustomerApp.GridComponent"
+import {GridModule} from "../Utility/CustomerApp.GridModule"
 import { CustomerRoutes } from '../Routing/CustomerApp.CustomerRouting';
 import {HttpClientModule} from "@angular/common/http"
 
 @NgModule({
   declarations: [
-     CustomerComponent,GridComponent
+     CustomerComponent
   ],
   imports: [
     RouterModule.forChild(CustomerRoutes),
-    CommonModule,FormsModule,ReactiveFormsModule,
+    CommonModule,FormsModule,ReactiveFormsModule,GridModule,
     HttpClientModule
   ],
   providers: [],
